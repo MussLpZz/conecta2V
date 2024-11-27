@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  /* Header Principal */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #003366;
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Panel Usuario */
+  .panel-usuario {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+  }
+
+  /* Tarjetas */
+  .panel-usuario .tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .panel-usuario .tarjeta {
+    flex: 1;
+    min-width: 300px;
+    background: #f8f9fa;
+    border: 1px solid #dcdfe6;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .panel-usuario .tarjeta:hover {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .panel-usuario .tarjeta h2 {
+    font-size: 1.25rem;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+
+  .panel-usuario .tarjeta-monto {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+
+  /* Tabla */
+  .panel-usuario table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+
+  .panel-usuario table thead th {
+    background: #003366;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #dcdfe6;
+  }
+
+  .panel-usuario table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .panel-usuario table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .panel-usuario .estado {
+    font-weight: bold;
+  }
+
+  .panel-usuario .estado.pagado {
+    color: #28a745;
+  }
+
+  .panel-usuario .estado.en-curso {
+    color: #ffc107;
+  }
+
+  /* Botones */
+  .panel-usuario a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #0056b3;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+
+  .panel-usuario a:hover {
+    background: #003366;
+  }
+
+  .panel-usuario .btn-solicitar {
+    background: #007bff;
+    margin: 1rem 0rem;
+  }
+
+  .panel-usuario .btn-solicitar:hover {
+    background: #0056b3;
+  }
+
+  .panel-usuario .btn-ver-historial {
+    margin-top: 15px;
+    background: #28a745;
+  }
+
+  .panel-usuario .btn-ver-historial:hover {
+    background: #218838;
+  }
+
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .main-header .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .main-header {
+      flex-wrap: wrap;
+    }
+
+    .main-header .login {
+      margin-top: 10px;
+    }
+
+    .panel-usuario .tarjetas {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 400px;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.register-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.register-container p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 0.9rem;
+    margin: 0.7rem 0;
+    border: none;
+    border-radius: 25px;
+    background: #f0f0f0;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.register-container input:focus {
+    box-shadow: 0 0 8px rgba(78, 84, 200, 0.5);
+    outline: none;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.register-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+}
+
+.register-container a {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #4e54c8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-container a:hover {
+    color: #8f94fb;
+}

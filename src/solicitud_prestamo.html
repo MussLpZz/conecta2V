@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Préstamo</title>
+  <link rel="stylesheet" href="../styles//solicitar.css">
+  <!-- <link rel="stylesheet" href="../styles/headerStyle.css"> -->
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="../img/logo.jpg" alt="Logo de la página" class="img-logo"/>
+      <img src="../img/menu.svg" alt="" class="menu">
+    </div>
+
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="../src/panel_usuario.html">Inicio</a></li>
+        <li><a href="../src/historial_pagos.html">Historial</a></li>
+        <li><a href="../src/gestion_pagos.html">Consultar Pagos</a></li>
+        <li><a href="../src/solicitud_prestamo.html">Solicitar Prestamo</a></li>
+        <li><a href="../src/soporte.html">Soporte</a></li>
+      </ul>
+    </nav>
+    <div class="login">
+      <a href="../index.html" class="btn-login"><img src="../img/iniciarSesion.svg" alt="" class="sesion"></a>
+    </div>
+  </header>
+  
+  <div class="form-container"> 
+    <form class="form">
+      <div class="formin">
+      <h1>Solicitud de Préstamo</h1>
+      <label for="amount">Monto Deseado</label>
+      <input type="number" id="amount" placeholder="Ingresa el monto" required>
+
+      <label for="months">Plazo en Meses</label>
+      <input type="range" id="months" min="1" max="24" step="1" value="12">
+
+      <label for="reason">Motivo del Préstamo</label>
+      <textarea id="reason" placeholder="Describe el motivo" required></textarea>
+
+      <button class="btn-primary">Enviar Solicitud</button>
+      <button class="btn-back" onclick="history.back()">Regresar</button>
+    </div>
+    </form>
+  </div>
+
+</div>
+
+  <script src="../js/hamburger.js"></script>
+</body>
+</html>

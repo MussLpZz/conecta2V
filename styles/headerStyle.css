@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    display: none; 
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    .img-logo{
+      display: none;
+    }
+
+    .menu {
+      display: block; 
+      background-color: white;
+      border-radius: 2vw;
+    }
+  
+    .navbar {
+      position: absolute;
+      background-color: #003366;
+      width: 10rem;
+      max-height: 0; 
+      overflow: hidden;
+      flex-direction: column;
+      transition: max-height 0.3s ease-in-out;
+    }
+  
+    .navbar.active {
+      max-height: 5rem; 
+      position: absolute;
+      overflow:scroll;
+      height: 7rem;
+      margin-top: 2rem;
+      color: black;
+      max-height: 10rem;
+      border-radius: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 5px 50px;
+    }
+  
+    .nav-links li a {
+      font-size: 1.2rem;
+      color: #fff;
+      text-align: center;
+    }
+  
+    .nav-links li a:hover {
+      color: #00bfff;
+    }
+
+    .menu:hover{
+      background-color: #00bfff; 
+      transform: scale(1.1);
+    }
+
+  }
+   /* Logo */
+   .main-header .logo img {
+    height: 50px;
+    width: auto;
+  }
+
+  .main-header .navbar {
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .main-header .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .main-header .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .main-header .nav-links li a:hover {
+    color: #00bfff;
+  }
+  
+  .main-header .login .btn-login {
+    display: inline-block;
+    padding: 1rem;
+    color: #003366;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 100%;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    width: 2rem;
+  }
+
+  .main-header .login .btn-login:hover {
+    background-color: #00bfff;
+    color: #fff;
+
+  }
